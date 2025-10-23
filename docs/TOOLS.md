@@ -2,6 +2,21 @@
 
 Complete descriptions of all tools included in simpleminded-shell.
 
+## 🚀 Quick Install
+
+**Recommended:** Use the interactive installer to install all tools at once:
+
+```bash
+cd simpleminded-shell
+bash install.sh
+```
+
+The installer will guide you through selecting and installing these tools, plus automatically configuring your shell.
+
+For manual installation, each tool section below includes individual install commands.
+
+---
+
 ## Table of Contents
 
 - [Core CLI Tools](#core-cli-tools) (Rust-based)

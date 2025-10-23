@@ -4,6 +4,17 @@
 
 A comprehensive modern shell environment that makes powerful CLI tools accessible through familiar commands.
 
+## Quick Setup
+
+To install this environment, use the interactive installer:
+
+```bash
+cd simpleminded-shell
+bash install.sh
+```
+
+The installer will guide you through tool selection, installation, and configuration.
+
 ## Repository Structure
 
 ```

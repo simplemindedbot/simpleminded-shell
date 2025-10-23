@@ -2,6 +2,29 @@
 
 How to configure AI assistants to work seamlessly with your simpleminded-shell environment.
 
+## 🎯 Better Option: Use the MCP Server
+
+**New and Recommended:** Instead of manual AI setup, use the [MCP Server](MCP-SERVER.md) for automatic AI integration!
+
+The MCP server provides instant, automatic environment understanding for AI assistants without any manual configuration. See [MCP-SERVER.md](MCP-SERVER.md) for setup instructions.
+
+This guide is for **manual setup** if you prefer not to use the MCP server.
+
+---
+
+## Prerequisites
+
+If you haven't already set up simpleminded-shell, use the interactive installer:
+
+```bash
+cd simpleminded-shell
+bash install.sh
+```
+
+This will install tools and configure the `aliases` command that AI assistants need to read.
+
+---
+
 ## Why AI Assistants Need to Know Your Aliases
 
 Your simpleminded-shell setup **replaces traditional commands with modern tools**. Without knowing this:

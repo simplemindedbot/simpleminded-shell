@@ -6,6 +6,21 @@ Complete guide to using the Simpleminded Shell MCP Server with AI assistants.
 
 The Simpleminded Shell MCP Server is a bridge between your shell environment and AI coding assistants. Instead of manually running the `aliases` command and copying output, the AI can automatically query your environment through the MCP protocol.
 
+## Prerequisites
+
+Before setting up the MCP server, you should have simpleminded-shell configured in your terminal:
+
+```bash
+# Clone the repository
+git clone https://github.com/yourusername/simpleminded-shell.git
+cd simpleminded-shell
+
+# Run the interactive installer
+bash install.sh
+```
+
+The installer will set up your shell with modern tools and aliases that the MCP server will expose to AI assistants.
+
 ## Benefits
 
 ### Automatic Environment Understanding

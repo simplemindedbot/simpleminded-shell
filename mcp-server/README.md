@@ -12,6 +12,21 @@ This MCP server exposes your shell configuration, aliases, installed tools, and 
 - **Provide relevant examples** - Get context-aware usage examples
 - **Recommend tools** - Suggest the right tool for any task
 
+## Prerequisites
+
+Before using this MCP server, you should have simpleminded-shell configured:
+
+```bash
+# Clone the main repository
+git clone https://github.com/yourusername/simpleminded-shell.git
+cd simpleminded-shell
+
+# Run the interactive installer
+bash install.sh
+```
+
+This sets up your shell with modern CLI tools and aliases that the MCP server will expose to AI assistants.
+
 ## Quick Start
 
 ### Install with uvx (Recommended)

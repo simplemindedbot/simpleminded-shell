@@ -14,18 +14,39 @@ This repository documents a complete modern shell environment built with Rust-ba
 
 ## 🚀 Quick Start
 
+### Option 1: Interactive Installer (Recommended)
+
+The easiest way to get started! The installer guides you through tool selection and configuration:
+
 ```bash
 # Clone this repo
 git clone https://github.com/yourusername/simpleminded-shell.git
 cd simpleminded-shell
 
+# Run the interactive installer
+bash install.sh
+```
+
+The installer will:
+- ✅ Detect your OS and check for Homebrew
+- ✅ Let you choose which tools to install
+- ✅ Install selected tools via Homebrew
+- ✅ Automatically configure your `.zshrc`
+- ✅ Create a cheatsheet of your aliases
+- ✅ Backup your existing configuration
+
+### Option 2: Manual Installation
+
+If you prefer to install manually:
+
+```bash
 # Install all tools (macOS with Homebrew)
 brew install bat fd ripgrep eza lazygit lazydocker zellij mise tealdeer glow fzf zoxide jq ollama
 
 # Update tldr cache
 tldr --update
 
-# Copy configuration snippets to your ~/.zshrc (see CONFIGURATION.md)
+# Copy configuration snippets to your ~/.zshrc (see docs/INSTALLATION.md)
 # Then reload your shell
 source ~/.zshrc
 ```

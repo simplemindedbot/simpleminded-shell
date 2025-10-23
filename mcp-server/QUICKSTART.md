@@ -2,6 +2,17 @@
 
 Get up and running with the Simpleminded Shell MCP Server in 5 minutes.
 
+## Prerequisites
+
+First, ensure you have simpleminded-shell configured in your terminal:
+
+```bash
+cd ../  # Go to main repository
+bash install.sh
+```
+
+This sets up the shell environment that the MCP server will expose to AI assistants.
+
 ## What You Just Built
 
 A complete MCP server that provides:

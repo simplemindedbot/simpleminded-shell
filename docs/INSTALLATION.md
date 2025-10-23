@@ -2,6 +2,73 @@
 
 Complete installation instructions for all simpleminded-shell tools.
 
+## 🎯 Recommended: Interactive Installer
+
+The **easiest and fastest** way to set up simpleminded-shell:
+
+```bash
+# Clone the repository
+git clone https://github.com/yourusername/simpleminded-shell.git
+cd simpleminded-shell
+
+# Run the interactive installer
+bash install.sh
+```
+
+### What the installer does:
+
+1. **Checks Prerequisites** - Verifies Homebrew is installed (offers to install if missing)
+2. **Interactive Tool Selection** - Choose which tools you want to install
+3. **Automatic Installation** - Installs selected tools via Homebrew
+4. **Smart Configuration** - Automatically adds configuration to your `.zshrc`
+5. **Creates Cheatsheet** - Generates a personalized aliases reference
+6. **Safe Backups** - Backs up your existing `.zshrc` before making changes
+7. **Idempotent** - Safe to run multiple times (won't duplicate configuration)
+
+### Features:
+
+- ✅ Detects your OS (macOS/Linux)
+- ✅ Skips already-installed tools
+- ✅ Lets you customize editor preference
+- ✅ Configures environment variables (BAT_THEME, FZF_DEFAULT_COMMAND, etc.)
+- ✅ Sets up shell integrations (mise, zoxide, starship)
+- ✅ Offers to reload your shell when done
+
+### Example session:
+
+```
+$ bash install.sh
+
+===================================
+Welcome to Simpleminded Shell Setup
+===================================
+
+Ready to begin? [Y/n]: y
+
+Detected OS: macos
+✓ Homebrew installed
+
+Tool Selection:
+  bat (better cat with syntax highlighting) [Y/n]: y
+  fd (better find, faster) [Y/n]: y
+  ripgrep (better grep, blazingly fast) [Y/n]: y
+  ...
+
+Installing Tools:
+✓ bat already installed
+ℹ Installing fd...
+✓ fd installed
+...
+
+Configuration:
+✓ Configuration added to .zshrc
+✓ Cheatsheet created
+
+Installation Complete!
+```
+
+---
+
 ## Prerequisites
 
 ### macOS
@@ -12,13 +79,15 @@ Install Homebrew if you don't have it:
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
+The `install.sh` script will check for Homebrew and offer to install it if missing.
+
 ### Linux
 
-Most tools are available via package managers. See individual tool sections below.
+Most tools are available via package managers. The `install.sh` script supports Linux with Homebrew. See individual tool sections below for distro-specific installation.
 
 ---
 
-## Quick Install (All Tools)
+## Manual Install (All Tools)
 
 ### macOS (Homebrew)
 
@@ -397,6 +466,16 @@ brew install --cask font-hack-nerd-font
 ---
 
 ## Next Steps
+
+### If you used install.sh:
+
+1. ✅ Tools installed
+2. ✅ Configuration added to `.zshrc`
+3. 📖 View your aliases: `aliases`
+4. 🚀 Start using! - see [USAGE.md](USAGE.md)
+5. 🤖 Set up AI integration - see [MCP-SERVER.md](MCP-SERVER.md) or [AI-SETUP.md](AI-SETUP.md)
+
+### If you installed manually:
 
 1. ✅ Install all tools
 2. ✅ Verify installations

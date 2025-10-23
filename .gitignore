@@ -1,0 +1,97 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+
+# Linux
+*~
+.directory
+.Trash-*
+
+# Editor and IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.vim/
+*.sublime-project
+*.sublime-workspace
+
+# Generated cheatsheets and local configs
+aliases_cheatsheet.md
+*_cheatsheet.md
+
+# Backup files
+*.backup
+*.bak
+*.old
+*.orig
+
+# Test files
+test_*.sh
+*_test.sh
+.zshrc.test
+.zshrc.local
+
+# Logs
+*.log
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# Python / MCP Server
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+venv/
+ENV/
+env/
+.venv
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+
+# IDEs
+.mypy_cache/
+.dmypy.json
+dmypy.json

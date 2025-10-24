@@ -24,50 +24,113 @@ A complete MCP server that provides:
 
 ## Installation
 
-### Option 1: Local Development
+The package is **now live on PyPI**! Choose the installation method that works best for you.
+
+### Option 1: uvx (Recommended - Zero Install)
+
+The easiest way - no installation needed:
 
 ```bash
-cd mcp-server
-pip install -e .
+# Run directly (downloads automatically)
+uvx --from simplemindedshellmcp simpleminded-mcp
 ```
 
-### Option 2: Direct from uvx (once published)
+### Option 2: pip (Permanent Installation)
 
 ```bash
-uvx simplemindedshellmcp
+# Install from PyPI
+pip install simplemindedshellmcp
+
+# Run the server
+simpleminded-mcp
+```
+
+### Option 3: uv (Modern Python)
+
+```bash
+# Install with uv
+uv pip install simplemindedshellmcp
+
+# Run
+uv run simpleminded-mcp
+```
+
+### Option 4: From GitHub (Development)
+
+```bash
+# Install latest from GitHub
+pip install git+https://github.com/simplemindedbot/simpleminded-shell.git#subdirectory=mcp-server
+
+# Or clone and develop
+git clone https://github.com/simplemindedbot/simpleminded-shell.git
+cd simpleminded-shell/mcp-server
+pip install -e .
 ```
 
 ## Test It Works
 
 ```bash
-# Test the server
-cd mcp-server
-python -m src.server
+# Test the server (any installation method)
+uvx --from simplemindedshellmcp simpleminded-mcp
+# Should output: INFO:src.server:Simpleminded Shell MCP Server starting...
 # Press Ctrl+C to stop
-
-# Run tests
-pytest
 ```
 
 ## Configure Claude Code
 
-Add to your MCP configuration:
+Add to your MCP configuration (`~/.claude/config.json` or via UI):
 
-**macOS/Linux:** `~/.claude/config.json`
+**Recommended: uvx (zero install)**
+```json
+{
+  "mcpServers": {
+    "simpleminded-shell": {
+      "command": "uvx",
+      "args": [
+        "--from",
+        "simplemindedshellmcp",
+        "simpleminded-mcp"
+      ]
+    }
+  }
+}
+```
 
+**With pip installation:**
+```json
+{
+  "mcpServers": {
+    "simpleminded-shell": {
+      "command": "simpleminded-mcp"
+    }
+  }
+}
+```
+
+**With uv:**
+```json
+{
+  "mcpServers": {
+    "simpleminded-shell": {
+      "command": "uv",
+      "args": ["run", "simpleminded-mcp"]
+    }
+  }
+}
+```
+
+**Development (local source):**
 ```json
 {
   "mcpServers": {
     "simpleminded-shell": {
       "command": "python",
       "args": ["-m", "src.server"],
-      "cwd": "/Users/YOUR_USERNAME/Documents/GitHub/simpleminded-shell/mcp-server"
+      "cwd": "/path/to/simpleminded-shell/mcp-server"
     }
   }
 }
 ```
-
-Replace `/Users/YOUR_USERNAME/...` with your actual path.
 
 ## Try It Out
 
@@ -87,33 +150,29 @@ Open Claude Code and ask:
 
 ## Next Steps
 
-### For Local Use
+### For Users
 
 You're done! The MCP server is running and Claude Code can use it.
 
-### For Publishing to PyPI
+**Quick verification:**
+```bash
+# Check it's published on PyPI
+curl -s https://pypi.org/pypi/simplemindedshellmcp/json | jq '.info.version'
 
-1. **Update package info** in `pyproject.toml`:
-   - Change URLs to your actual repository
-   - Update author info if needed
+# Try installing it
+pip install simplemindedshellmcp
 
-2. **Test locally** first:
-   ```bash
-   python -m build
-   pip install dist/*.whl
-   ```
+# Test it works
+simpleminded-mcp
+```
 
-3. **Publish to TestPyPI**:
-   ```bash
-   python -m twine upload --repository testpypi dist/*
-   ```
+### For Contributors
 
-4. **Publish to PyPI**:
-   ```bash
-   python -m twine upload dist/*
-   ```
-
-See [PUBLISHING.md](PUBLISHING.md) for detailed instructions.
+Want to contribute? See [PUBLISHING.md](PUBLISHING.md) for:
+- Setting up development environment
+- Running tests
+- Publishing new versions
+- GitHub Actions workflow
 
 ## Troubleshooting
 

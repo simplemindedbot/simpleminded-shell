@@ -41,32 +41,93 @@ The installer will set up your shell with modern tools and aliases that the MCP 
 
 ## Installation
 
-### Option 1: uvx (Easiest)
+The MCP server is now **live on PyPI**! Choose the installation method that works best for you.
 
-No installation needed! Just configure and run:
+### Option 1: uvx (Recommended - Zero Install)
+
+The easiest way - no permanent installation needed:
 
 ```bash
-# Test it works
+# Run directly with uvx (downloads and runs automatically)
 uvx --from simplemindedshellmcp simpleminded-mcp
+
+# Test it works (should start the server)
+uvx --from simplemindedshellmcp simpleminded-mcp
+# Press Ctrl+C to stop
 ```
 
-### Option 2: pip
+**Best for:** Quick testing, Claude Code configuration, users who don't want permanent installations.
+
+### Option 2: pip (Permanent Installation)
+
+Install permanently to your Python environment:
 
 ```bash
-# From PyPI
+# From PyPI (recommended)
 pip install simplemindedshellmcp
 
-# Or from source
+# Run the server
+simpleminded-mcp
+
+# Or run as module
+python -m src.server
+```
+
+**Best for:** Users who prefer traditional pip, virtual environments, or need the package installed.
+
+### Option 3: uv (Modern Python Package Manager)
+
+Using the modern uv package manager:
+
+```bash
+# Install with uv
+uv pip install simplemindedshellmcp
+
+# Run directly
+uv run simpleminded-mcp
+```
+
+**Best for:** Users already using uv for Python package management.
+
+### Option 4: From GitHub (Development/Latest)
+
+Install the latest development version directly from GitHub:
+
+```bash
+# Install from main branch
+pip install git+https://github.com/simplemindedbot/simpleminded-shell.git#subdirectory=mcp-server
+
+# Or clone and install in development mode
+git clone https://github.com/simplemindedbot/simpleminded-shell.git
 cd simpleminded-shell/mcp-server
 pip install -e .
+```
+
+**Best for:** Contributing to development, testing unreleased features, or needing the absolute latest code.
+
+### Verification
+
+After installation, verify the server works:
+
+```bash
+# With uvx
+uvx --from simplemindedshellmcp simpleminded-mcp
+
+# With pip install
+simpleminded-mcp
+
+# Should see:
+# INFO:src.server:Simpleminded Shell MCP Server starting...
+# (Press Ctrl+C to stop)
 ```
 
 ## Configuration
 
 ### Claude Code
 
-Add to your Claude Code MCP settings (usually in `~/.claude/config.json` or via UI):
+Add to your Claude Code MCP settings (usually in `~/.claude/config.json` or via UI).
 
+**Recommended: Using uvx (no installation needed)**
 ```json
 {
   "mcpServers": {
@@ -82,7 +143,30 @@ Add to your Claude Code MCP settings (usually in `~/.claude/config.json` or via 
 }
 ```
 
-**With local pip installation:**
+**Alternative: With pip installation**
+```json
+{
+  "mcpServers": {
+    "simpleminded-shell": {
+      "command": "simpleminded-mcp"
+    }
+  }
+}
+```
+
+**Alternative: With uv installation**
+```json
+{
+  "mcpServers": {
+    "simpleminded-shell": {
+      "command": "uv",
+      "args": ["run", "simpleminded-mcp"]
+    }
+  }
+}
+```
+
+**Development: From local source**
 ```json
 {
   "mcpServers": {
@@ -97,7 +181,10 @@ Add to your Claude Code MCP settings (usually in `~/.claude/config.json` or via 
 
 ### Other MCP-Compatible Tools
 
-The server works with any MCP-compatible AI tool. Configuration format is similar - specify the command and args to run the server.
+The server works with any MCP-compatible AI tool. Use the configuration format appropriate for your installation method:
+- **uvx**: `command: "uvx", args: ["--from", "simplemindedshellmcp", "simpleminded-mcp"]`
+- **pip**: `command: "simpleminded-mcp"`
+- **uv**: `command: "uv", args: ["run", "simpleminded-mcp"]`
 
 ## Usage Examples
 

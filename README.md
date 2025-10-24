@@ -125,11 +125,27 @@ Your setup works seamlessly with AI coding assistants!
 
 Automatic AI integration via the Model Context Protocol - no manual setup needed!
 
-```bash
-# Install the MCP server
-uvx simplemindedshellmcp
+**Installation Options:**
 
-# Configure Claude Code once, then AI automatically knows your environment
+```bash
+# Option 1: uvx (easiest - no installation needed!)
+uvx --from simplemindedshellmcp simpleminded-mcp
+
+# Option 2: pip (permanent installation)
+pip install simplemindedshellmcp
+
+# Option 3: uv (modern Python package installer)
+uv pip install simplemindedshellmcp
+
+# Option 4: From GitHub (latest development version)
+pip install git+https://github.com/simplemindedbot/simpleminded-shell.git#subdirectory=mcp-server
+```
+
+**Quick Test:**
+```bash
+# Test the server is working
+uvx --from simplemindedshellmcp simpleminded-mcp
+# Should start without errors (Ctrl+C to stop)
 ```
 
 AI assistants automatically:
@@ -138,7 +154,7 @@ AI assistants automatically:
 - Check which tools you have installed
 - Provide examples tailored to your setup
 
-**See [MCP-SERVER.md](docs/MCP-SERVER.md)** for setup instructions.
+**See [MCP-SERVER.md](docs/MCP-SERVER.md)** for complete setup and configuration.
 
 **Alternative: Manual Setup**
 

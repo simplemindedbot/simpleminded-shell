@@ -6,7 +6,24 @@ How to configure AI assistants to work seamlessly with your simpleminded-shell e
 
 **New and Recommended:** Instead of manual AI setup, use the [MCP Server](MCP-SERVER.md) for automatic AI integration!
 
-The MCP server provides instant, automatic environment understanding for AI assistants without any manual configuration. See [MCP-SERVER.md](MCP-SERVER.md) for setup instructions.
+The MCP server provides instant, automatic environment understanding for AI assistants without any manual configuration.
+
+**Quick Install:**
+```bash
+# Option 1: uvx (easiest - zero install)
+uvx --from simplemindedshellmcp simpleminded-mcp
+
+# Option 2: pip (permanent installation)
+pip install simplemindedshellmcp
+
+# Option 3: uv (modern package manager)
+uv pip install simplemindedshellmcp
+
+# Option 4: From GitHub (latest development)
+pip install git+https://github.com/simplemindedbot/simpleminded-shell.git#subdirectory=mcp-server
+```
+
+See [MCP-SERVER.md](MCP-SERVER.md) for complete setup, configuration, and usage instructions.
 
 This guide is for **manual setup** if you prefer not to use the MCP server.
 

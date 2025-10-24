@@ -61,7 +61,7 @@ brew install gh
 1. Go to https://pypi.org/manage/account/publishing/
 2. Click "Add a new pending publisher"
 3. Fill in the form:
-   - **PyPI Project Name:** `simpleminded-shell-mcp`
+   - **PyPI Project Name:** `simplemindedshellmcp`
    - **Owner:** `simplemindedbot`
    - **Repository name:** `simpleminded-shell`
    - **Workflow name:** `publish.yml`
@@ -72,7 +72,7 @@ This reserves the package name and authorizes your GitHub repository to publish 
 
 **For existing packages:**
 
-1. Go to your project page: https://pypi.org/project/simpleminded-shell-mcp/
+1. Go to your project page: https://pypi.org/project/simplemindedshellmcp/
 2. Click "Manage" → "Publishing"
 3. Click "Add a new publisher"
 4. Fill in the same information as above
@@ -197,13 +197,13 @@ gh run watch
 # Wait 2-5 minutes for PyPI to index
 
 # Check PyPI page
-open https://pypi.org/project/simpleminded-shell-mcp/
+open https://pypi.org/project/simplemindedshellmcp/
 
 # Test installation
-uv pip install simpleminded-shell-mcp
+uv pip install simplemindedshellmcp
 
 # Test with uvx (recommended usage)
-uvx simpleminded-shell-mcp --help
+uvx simplemindedshellmcp --help
 ```
 
 ## Testing Before Release
@@ -222,7 +222,7 @@ pytest
 simpleminded-mcp --help
 
 # Uninstall
-uv pip uninstall simpleminded-shell-mcp
+uv pip uninstall simplemindedshellmcp
 ```
 
 ### Build Testing
@@ -256,7 +256,7 @@ If you want to test on TestPyPI first:
    ```
 4. Test installation:
    ```bash
-   uv pip install --index-url https://test.pypi.org/simple/ simpleminded-shell-mcp
+   uv pip install --index-url https://test.pypi.org/simple/ simplemindedshellmcp
    ```
 
 ## Troubleshooting
@@ -321,10 +321,10 @@ uv build --verbose
 **Check status:**
 ```bash
 # Check if version is live
-curl -s https://pypi.org/pypi/simpleminded-shell-mcp/json | jq '.info.version'
+curl -s https://pypi.org/pypi/simplemindedshellmcp/json | jq '.info.version'
 
 # Check all versions
-curl -s https://pypi.org/pypi/simpleminded-shell-mcp/json | jq '.releases | keys'
+curl -s https://pypi.org/pypi/simplemindedshellmcp/json | jq '.releases | keys'
 ```
 
 ## Branch Protection

@@ -40,7 +40,7 @@ uvx --from git+https://github.com/yourusername/simpleminded-shell simpleminded-m
 
 ```bash
 # From PyPI (once published)
-pip install simpleminded-shell-mcp
+pip install simplemindedshellmcp
 
 # Or from source
 cd simpleminded-shell/mcp-server
@@ -58,7 +58,7 @@ Add to your Claude Code MCP configuration:
       "command": "uvx",
       "args": [
         "--from",
-        "simpleminded-shell-mcp",
+        "simplemindedshellmcp",
         "simpleminded-mcp"
       ]
     }
@@ -218,7 +218,7 @@ python -m build
 python -m twine upload --repository testpypi dist/*
 
 # Test installation
-pip install --index-url https://test.pypi.org/simple/ simpleminded-shell-mcp
+pip install --index-url https://test.pypi.org/simple/ simplemindedshellmcp
 ```
 
 ### Production Upload

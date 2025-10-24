@@ -216,7 +216,7 @@ uv run mypy src/  # May have errors (continue-on-error in CI)
 
 ## Python Package Details
 
-**Package name**: `simpleminded-shell-mcp`
+**Package name**: `simplemindedshellmcp`
 **Entry point**: `simpleminded-mcp` command (runs `src.server:main`)
 **Python version**: Requires Python 3.10+
 **Dependencies**: `mcp>=0.1.0`
@@ -268,7 +268,7 @@ uv run mypy src/  # May have errors (continue-on-error in CI)
 2. Commit changes
 3. Create and push tag: `git tag v0.5.0 && git push origin v0.5.0`
 4. GitHub Actions automatically builds and publishes to PyPI
-5. Verify at https://pypi.org/project/simpleminded-shell-mcp/
+5. Verify at https://pypi.org/project/simplemindedshellmcp/
 
 ## Notes
 

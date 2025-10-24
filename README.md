@@ -127,7 +127,7 @@ Automatic AI integration via the Model Context Protocol - no manual setup needed
 
 ```bash
 # Install the MCP server
-uvx simpleminded-shell-mcp
+uvx simplemindedshellmcp
 
 # Configure Claude Code once, then AI automatically knows your environment
 ```

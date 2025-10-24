@@ -47,14 +47,14 @@ No installation needed! Just configure and run:
 
 ```bash
 # Test it works
-uvx --from simpleminded-shell-mcp simpleminded-mcp
+uvx --from simplemindedshellmcp simpleminded-mcp
 ```
 
 ### Option 2: pip
 
 ```bash
 # From PyPI
-pip install simpleminded-shell-mcp
+pip install simplemindedshellmcp
 
 # Or from source
 cd simpleminded-shell/mcp-server
@@ -74,7 +74,7 @@ Add to your Claude Code MCP settings (usually in `~/.claude/config.json` or via 
       "command": "uvx",
       "args": [
         "--from",
-        "simpleminded-shell-mcp",
+        "simplemindedshellmcp",
         "simpleminded-mcp"
       ]
     }

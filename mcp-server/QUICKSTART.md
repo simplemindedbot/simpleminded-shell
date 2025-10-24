@@ -34,7 +34,7 @@ pip install -e .
 ### Option 2: Direct from uvx (once published)
 
 ```bash
-uvx simpleminded-shell-mcp
+uvx simplemindedshellmcp
 ```
 
 ## Test It Works

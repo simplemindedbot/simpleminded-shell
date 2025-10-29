@@ -33,6 +33,8 @@ For manual installation, each tool section below includes individual install com
 
 ### bat - Better `cat`
 
+**Repository:** https://github.com/sharkdp/bat
+
 **Install:** `brew install bat`
 
 A `cat` clone with syntax highlighting and Git integration.
@@ -65,6 +67,8 @@ bat -A file.sh                 # Show all characters (tabs, line endings)
 ---
 
 ### fd - Better `find`
+
+**Repository:** https://github.com/sharkdp/fd
 
 **Install:** `brew install fd`
 
@@ -99,6 +103,8 @@ fd . /path/to/search           # Search in specific directory
 ---
 
 ### ripgrep (rg) - Better `grep`
+
+**Repository:** https://github.com/BurntSushi/ripgrep
 
 **Install:** `brew install ripgrep`
 
@@ -138,6 +144,8 @@ rg -A 3 -B 3 "pattern"         # Show 3 lines context before/after
 ---
 
 ### eza - Better `ls`
+
+**Repository:** https://github.com/eza-community/eza
 
 **Install:** `brew install eza`
 
@@ -179,6 +187,8 @@ eza -D                         # List only directories
 
 ### lazygit - Visual Git Interface
 
+**Repository:** https://github.com/jesseduffield/lazygit
+
 **Install:** `brew install lazygit`
 
 A simple terminal UI for git commands - no more memorizing git syntax.
@@ -218,6 +228,8 @@ A simple terminal UI for git commands - no more memorizing git syntax.
 
 ### lazydocker - Visual Docker Interface
 
+**Repository:** https://github.com/jesseduffield/lazydocker
+
 **Install:** `brew install lazydocker`
 
 A simple terminal UI for docker and docker-compose.
@@ -254,6 +266,8 @@ A simple terminal UI for docker and docker-compose.
 ---
 
 ### zellij - Terminal Multiplexer
+
+**Repository:** https://github.com/zellij-org/zellij
 
 **Install:** `brew install zellij`
 
@@ -302,6 +316,8 @@ zellij kill-session name       # Kill a session
 
 ### mise - Universal Version Manager
 
+**Repository:** https://github.com/jdx/mise
+
 **Install:** `brew install mise`
 
 Replace `pyenv`, `nvm`, `rbenv`, and more with one unified tool.
@@ -348,6 +364,8 @@ mise use --global python@3.12.11
 
 ### tealdeer (tldr) - Simplified Man Pages
 
+**Repository:** https://github.com/dbrgn/tealdeer
+
 **Install:** `brew install tealdeer`
 
 Community-driven man pages focused on practical examples.
@@ -384,6 +402,8 @@ tldr --clear-cache             # Clear cache
 
 ### glow - Terminal Markdown Renderer
 
+**Repository:** https://github.com/charmbracelet/glow
+
 **Install:** `brew install glow`
 
 Render markdown files beautifully in the terminal.
@@ -418,6 +438,8 @@ glow .                         # Browse markdown in directory
 ## Search & Navigation
 
 ### fzf - Fuzzy Finder
+
+**Repository:** https://github.com/junegunn/fzf
 
 **Install:** `brew install fzf`
 
@@ -455,6 +477,8 @@ fzf --preview 'bat {}'         # Preview with bat
 
 ### zoxide - Smart `cd`
 
+**Repository:** https://github.com/ajeetdsouza/zoxide
+
 **Install:** `brew install zoxide`
 
 A smarter cd command that learns your navigation habits.
@@ -490,6 +514,8 @@ zoxide remove /path            # Remove directory from database
 ## Data Processing
 
 ### jq - JSON Processor
+
+**Repository:** https://github.com/jqlang/jq
 
 **Install:** `brew install jq`
 
@@ -545,6 +571,8 @@ jq '.users[] | select(.active == true) | .email' data.json
 ## AI & LLMs
 
 ### ollama - Run LLMs Locally
+
+**Repository:** https://github.com/ollama/ollama
 
 **Install:** `brew install ollama`
 

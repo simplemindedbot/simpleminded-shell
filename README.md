@@ -65,24 +65,24 @@ source ~/.zshrc
 ## 🔧 What's Included
 
 ### Core Modern CLI Tools (All Rust-based)
-- **bat** - Better `cat` with syntax highlighting
-- **fd** - Better `find` with intuitive syntax
-- **ripgrep (rg)** - Better `grep`, blazingly fast
-- **eza** - Better `ls` with icons and Git integration
+- **[bat](https://github.com/sharkdp/bat)** - Better `cat` with syntax highlighting
+- **[fd](https://github.com/sharkdp/fd)** - Better `find` with intuitive syntax
+- **[ripgrep](https://github.com/BurntSushi/ripgrep)** (rg) - Better `grep`, blazingly fast
+- **[eza](https://github.com/eza-community/eza)** - Better `ls` with icons and Git integration
 
 ### TUI Applications
-- **lazygit** - Visual Git interface
-- **lazydocker** - Visual Docker interface  
-- **zellij** - Modern terminal multiplexer (tmux alternative)
+- **[lazygit](https://github.com/jesseduffield/lazygit)** - Visual Git interface
+- **[lazydocker](https://github.com/jesseduffield/lazydocker)** - Visual Docker interface
+- **[zellij](https://github.com/zellij-org/zellij)** - Modern terminal multiplexer (tmux alternative)
 
 ### Utilities & Tools
-- **mise** - Universal version manager (replaces pyenv, nvm, rbenv, etc.)
-- **tealdeer (tldr)** - Quick command examples
-- **glow** - Terminal markdown renderer
-- **fzf** - Fuzzy finder for everything
-- **zoxide** - Smart `cd` that learns your habits
-- **jq** - JSON processor
-- **ollama** - Run LLMs locally
+- **[mise](https://github.com/jdx/mise)** - Universal version manager (replaces pyenv, nvm, rbenv, etc.)
+- **[tealdeer](https://github.com/dbrgn/tealdeer)** (tldr) - Quick command examples
+- **[glow](https://github.com/charmbracelet/glow)** - Terminal markdown renderer
+- **[fzf](https://github.com/junegunn/fzf)** - Fuzzy finder for everything
+- **[zoxide](https://github.com/ajeetdsouza/zoxide)** - Smart `cd` that learns your habits
+- **[jq](https://github.com/jqlang/jq)** - JSON processor
+- **[ollama](https://github.com/ollama/ollama)** - Run LLMs locally
 
 ### Smart Features
 - **80+ aliases** - Use old commands, get new features automatically
@@ -238,6 +238,6 @@ Built on the shoulders of giants:
 
 ---
 
-**Last Updated**: 2025-10-23
+**Last Updated**: 2025-10-24
 
 **See [TOOLS.md](docs/TOOLS.md) for detailed tool descriptions and [AI-SETUP.md](docs/AI-SETUP.md) to configure your AI assistants.**

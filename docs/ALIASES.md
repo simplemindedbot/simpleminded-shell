@@ -234,8 +234,8 @@ tll                                # See all available commands
 ### Markdown & Help
 
 ```bash
-aliases='glow -p ~/Documents/GitHub/idea2job/zsh_aliases_cheatsheet.md'
-cheat='glow -p ~/Documents/GitHub/idea2job/zsh_aliases_cheatsheet.md'
+aliases='glow -p ~/Documents/shell-docs/zsh_aliases_cheatsheet.md'
+cheat='glow -p ~/Documents/shell-docs/zsh_aliases_cheatsheet.md'
 md='glow -p'                       # View any markdown file with formatting
 cheatsh='curl cheat.sh'            # Online cheatsheets
 howto='curl cheat.sh'              # Same as cheatsh
@@ -301,8 +301,8 @@ olrm modelname                     # Remove a model
 
 ```bash
 reload='source ~/.zshrc'           # Reload shell configuration
-zshconfig='${EDITOR:-code} ~/.zshrc'  # Edit zsh config
-zshrc='${EDITOR:-code} ~/.zshrc'   # Edit this file (duplicate)
+zshconfig='${EDITOR:-zed} ~/.zshrc'  # Edit zsh config
+zshrc='${EDITOR:-zed} ~/.zshrc'   # Edit this file (duplicate)
 path='echo $PATH | tr ":" "\n"'    # Show PATH entries on separate lines
 ports='lsof -i -P -n | rg LISTEN'  # Show listening ports
 ```
@@ -405,4 +405,4 @@ reload
 
 ---
 
-**Last Updated**: 2025-10-23
+**Last Updated**: 2025-10-24
